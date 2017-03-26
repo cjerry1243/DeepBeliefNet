@@ -25,11 +25,11 @@ def filetest(path, words):
 
 words = 1
 i=0
-f=open('speechdata/training/trainingfiles.txt','r')
+f=open('training/trainingfiles.txt','r')
 for fname in f.readlines():
     i = i + 1
     fname = fname.strip()
-    specialmfcc = filetest('speechdata/training/' + fname, words)
+    specialmfcc = filetest('training/' + fname, words)
     if i ==1:
         trainingdatapy = specialmfcc
     else:
@@ -39,11 +39,11 @@ for fname in f.readlines():
 f.close()
 
 i=0
-f=open('speechdata/testing/testingfiles.txt','r')
+f=open('testing/testingfiles.txt','r')
 for fname in f.readlines():
     i = i + 1
     fname = fname.strip()
-    specialmfcc = filetest('speechdata/testing/' + fname, words)
+    specialmfcc = filetest('testing/' + fname, words)
     if i ==1:
         testingdatapy = specialmfcc
     else:
