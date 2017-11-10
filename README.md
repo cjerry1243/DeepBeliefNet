@@ -1,4 +1,6 @@
 # DeepBeliefNet
+Pre-training a deep neural networks by rbms, and use backprpogation for acoustic number classifications.
+
 
 ## To Start
 Download all files into a folder, and unzip 2 files: trainingwav.zip, testingwav.zip.
