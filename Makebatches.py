@@ -66,7 +66,7 @@ targets = np.vstack((targets,np.matlib.repmat([0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,0 ,0],40,
 targets = np.vstack((targets,np.matlib.repmat([0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,0],40,1)))
 targets = np.vstack((targets,np.matlib.repmat([0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],40,1)))
 
-digitdata = 1./(1+np.exp(-digitdata/8.))
+digitdata = (digitdata-digitdata.mean(axis=0))/(digitdata.std(axis=0)+0.0001)
 
 totnum = digitdata.shape[0]
 print 'Size of training dataset =',totnum
@@ -100,7 +100,7 @@ targets = np.vstack((targets,np.matlib.repmat([0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,0 ,0],10,
 targets = np.vstack((targets,np.matlib.repmat([0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,0],10,1)))
 targets = np.vstack((targets,np.matlib.repmat([0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],10,1)))
 
-digitdata = 1./(1+np.exp(-digitdata/8.))
+digitdata = (digitdata-digitdata.mean(axis=0))/(digitdata.std(axis=0)+0.0001)
 
 totnum = digitdata.shape[0]
 print 'Size of test dataset =',totnum
