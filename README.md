@@ -24,4 +24,7 @@ performs RBM process,stacking RBM to a Deep Belief Networks.
 use Backpropogation gradient descend method to classify voice of numbers.
 
 ## To Run
-run 'DBNclassifier.py',to see the result.
+run 'DBNclassifier.py' to see the result.
+
+## Result
+accuracy: 0.92
