@@ -1,5 +1,5 @@
 # DeepBeliefNet
-Pre-training a deep neural networks by rbms, and use backprpogation for acoustic number classifications.
+Pre-training a deep neural networks by rbms, and use backprpogation for spoken digit classification.
 
 
 ## To Start
